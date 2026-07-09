@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Elnadry — Backend Developer & DevOps Engineer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231a6cc4'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-weight='700' font-size='14' fill='white'>ME</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Devicons (tech logos) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- SIDEBAR OVERLAY -->
+<div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <span class="sidebar-name">Mohamed Elnadry</span>
+    <button class="sidebar-close" onclick="closeSidebar()" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="#experience" onclick="closeSidebar()">Experience</a>
+    <a href="#projects" onclick="closeSidebar()">Projects</a>
+    <a href="#skills" onclick="closeSidebar()">Skills</a>
+    <a href="#contact" onclick="closeSidebar()">Contact</a>
+  </nav>
+</aside>
+
+<!-- TOP NAV -->
+<nav>
+  <div class="nav-inner">
+    <span class="logo">Mohamed Elnadry</span>
+    <div class="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="hamburger" onclick="openSidebar()" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-wrap">
+      <p class="hero-tag">Backend Developer &amp; DevOps Engineer</p>
+      <h1 id="typeTarget">I build <span>scalable systems</span> and backend infrastructure.</h1>
+      <p class="hero-sub">Based in Cairo, Egypt. Specializing in Python, .NET, cloud deployments, and ERP integrations. Currently at Makkook AI.</p>
+      <div class="hero-btns">
+        <a class="btn btn-primary" href="mailto:mohamdelnadry12345@gmail.com">Get in touch</a>
+        <a class="btn btn-ghost" href="#projects">View projects</a>
+        <a class="btn btn-ghost" href="https://github.com/mohamedelnadry" target="_blank">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-wrap">
+      <p class="sec-label">Career</p>
+      <h2 class="sec-title">Experience</h2>
+      <div class="exp-list">
+
+        <div class="exp-item">
+          <span class="exp-date">Oct 2025 — Present</span>
+          <div>
+            <p class="exp-role">Backend Developer &amp; DevOps Engineer</p>
+            <p class="exp-company">Makkook AI · Cairo, Egypt</p>
+            <ul class="exp-bullets">
+              <li>Python (Django REST Framework) and .NET 10 (ASP.NET Core)</li>
+              <li>Odoo ERP integration via JSON-RPC and REST API</li>
+              <li>PostgreSQL, SQL Server, MongoDB, Redis</li>
+              <li>WebSockets, SSE, Celery, Firebase FCM, SendGrid, Google Cloud Storage, Sentry</li>
+              <li>Docker, Nginx, GitLab CI/CD, Linux VMs — company-wide DevOps support</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <span class="exp-date">Oct 2025 — Present</span>
+          <div>
+            <p class="exp-role">Backend Developer (Part-Time)</p>
+            <p class="exp-company">RDI · Cairo, Egypt</p>
+            <ul class="exp-bullets">
+              <li>Maintained and supported existing RDI websites, fixing bugs and deploying updates</li>
+              <li>Continued managing GCP infrastructure (GCE, GKE, Cloud Run, IAM)</li>
+              <li>Server provisioning, SSL renewal, and DevOps upkeep for hosted sites</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <span class="exp-date">Sep 2023 — Sep 2025</span>
+          <div>
+            <p class="exp-role">Backend Developer</p>
+            <p class="exp-company">RDI · Dokki, Egypt</p>
+            <ul class="exp-bullets">
+              <li>Built backend services orchestrating AI/ML pipelines using Django, FastAPI, and Flask</li>
+              <li>Contributed to frontend projects with Next.js and React</li>
+              <li>Architected GCP cloud-native systems — reduced cloud costs by 60%</li>
+              <li>CI/CD pipelines with Docker, Docker Compose, Docker Swarm, GitLab CI/CD</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <span class="exp-date">Jul 2023 — Sep 2023</span>
+          <div>
+            <p class="exp-role">Backend Developer Intern</p>
+            <p class="exp-company">Paymob · Cairo, Egypt</p>
+            <ul class="exp-bullets">
+              <li>Contributed to core backend projects, improving system efficiency and scalability</li>
+              <li>Collaborated with cross-functional teams on feature delivery</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-wrap">
+      <p class="sec-label">Work</p>
+      <h2 class="sec-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-title">Honey Auction Platform</span>
+            <span class="proj-badge">Makkook AI</span>
+          </div>
+          <p class="proj-desc">A digital honey auction marketplace with real-time bidding, a full wallet system (deposit, deduct, refund), dual-layer user verification (OTP + admin), and automated auction lifecycle management via Celery Beat. Sellers list products, buyers register and bid live, with SSE pushing bid updates to all connected clients.</p>
+          <div class="proj-techs">
+            <span class="proj-tech">Python</span>
+            <span class="proj-tech">Django REST Framework</span>
+            <span class="proj-tech">PostgreSQL</span>
+            <span class="proj-tech">Redis</span>
+            <span class="proj-tech">Celery</span>
+            <span class="proj-tech">SSE</span>
+            <span class="proj-tech">SendGrid</span>
+            <span class="proj-tech">Google Cloud Storage</span>
+            <span class="proj-tech">Docker</span>
+            <span class="proj-tech">Sentry</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-title">Simplex — Field Service Platform</span>
+            <span class="proj-badge">Makkook AI</span>
+          </div>
+          <p class="proj-desc">A middleware API connecting mobile/web clients, Odoo ERP, and an external AI service. Manages machines, support tickets, and field engineer visits for customers, employees, and admins. Features an AI-powered chat assistant with human escalation flow, real-time messaging via WebSockets + Redis pub/sub, and bilingual (AR/EN) push notifications.</p>
+          <div class="proj-techs">
+            <span class="proj-tech">C#</span>
+            <span class="proj-tech">.NET 10 / ASP.NET Core</span>
+            <span class="proj-tech">SQL Server</span>
+            <span class="proj-tech">MongoDB</span>
+            <span class="proj-tech">Redis</span>
+            <span class="proj-tech">WebSockets</span>
+            <span class="proj-tech">Odoo ERP</span>
+            <span class="proj-tech">Firebase FCM</span>
+            <span class="proj-tech">Docker</span>
+            <span class="proj-tech">Nginx</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-title">Arabic AI Tutor</span>
+            <span class="proj-badge">Freelance</span>
+          </div>
+          <p class="proj-desc">Backend for an AI-powered Arabic language learning platform where learners voice-chat with a real-time talking video avatar across a 16-lesson curriculum in 4 languages. Engineered a real-time speech-to-speech pipeline over WebSockets: OpenAI Realtime API → GPT-4 Turbo tutor → HeyGen streaming avatar with ElevenLabs voice. Implemented curriculum-grounded LLM prompting to keep responses on-syllabus.</p>
+          <div class="proj-techs">
+            <span class="proj-tech">Python</span>
+            <span class="proj-tech">FastAPI</span>
+            <span class="proj-tech">WebSockets</span>
+            <span class="proj-tech">OpenAI Realtime API</span>
+            <span class="proj-tech">GPT-4 Turbo</span>
+            <span class="proj-tech">HeyGen</span>
+            <span class="proj-tech">ElevenLabs</span>
+            <span class="proj-tech">PostgreSQL</span>
+            <span class="proj-tech">Docker</span>
+            <span class="proj-tech">GCP Cloud Run</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-wrap">
+      <p class="sec-label">Capabilities</p>
+      <h2 class="sec-title">Skills</h2>
+
+      <div class="skills-group">
+        <p class="skill-cat">Languages</p>
+        <div class="skills-row">
+          <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+          <div class="skill-item"><i class="devicon-csharp-plain colored"></i><span>C#</span></div>
+          <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+          <div class="skill-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+          <div class="skill-item"><i class="devicon-azuresqldatabase-plain colored"></i><span>SQL</span></div>
+          <div class="skill-item"><i class="devicon-bash-plain"></i><span>Bash</span></div>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <p class="skill-cat">Frameworks</p>
+        <div class="skills-row">
+          <div class="skill-item"><i class="devicon-django-plain colored"></i><span>Django / DRF</span></div>
+          <div class="skill-item"><i class="devicon-dot-net-plain colored"></i><span>ASP.NET Core</span></div>
+          <div class="skill-item"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+          <div class="skill-item"><i class="devicon-flask-original"></i><span>Flask</span></div>
+          <div class="skill-item"><i class="devicon-nextjs-plain"></i><span>Next.js</span></div>
+          <div class="skill-item"><i class="devicon-express-original"></i><span>Express</span></div>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <p class="skill-cat">Databases</p>
+        <div class="skills-row">
+          <div class="skill-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+          <div class="skill-item"><i class="devicon-microsoftsqlserver-plain colored"></i><span>SQL Server</span></div>
+          <div class="skill-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+          <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+          <div class="skill-item"><i class="devicon-redis-plain colored"></i><span>Redis</span></div>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <p class="skill-cat">DevOps &amp; Cloud</p>
+        <div class="skills-row">
+          <div class="skill-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+          <div class="skill-item"><i class="devicon-kubernetes-plain colored"></i><span>Kubernetes</span></div>
+          <div class="skill-item"><i class="devicon-googlecloud-plain colored"></i><span>GCP</span></div>
+          <div class="skill-item"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+          <div class="skill-item"><i class="devicon-azure-plain colored"></i><span>Azure</span></div>
+          <div class="skill-item"><i class="devicon-nginx-original colored"></i><span>Nginx</span></div>
+          <div class="skill-item"><i class="devicon-gitlab-plain colored"></i><span>GitLab CI/CD</span></div>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <p class="skill-cat">Real-time &amp; Async</p>
+        <div class="skills-row">
+          <div class="skill-item"><i class="devicon-socketio-original"></i><span>WebSockets</span></div>
+          <div class="skill-item"><i class="devicon-redis-plain colored"></i><span>Celery</span></div>
+          <div class="skill-item"><i class="devicon-redis-plain colored"></i><span>Redis Pub/Sub</span></div>
+          <div class="skill-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:32px;height:32px;color:#1a6cc4"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <span>SSE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <p class="skill-cat">Integrations</p>
+        <div class="skills-row">
+          <div class="skill-item"><i class="devicon-firebase-plain colored"></i><span>Firebase FCM</span></div>
+          <div class="skill-item"><i class="devicon-google-plain colored"></i><span>Google Cloud Storage</span></div>
+          <div class="skill-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a6cc4" stroke-width="1.5" style="width:32px;height:32px"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            <span>SendGrid</span>
+          </div>
+          <div class="skill-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5" style="width:32px;height:32px"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            <span>Odoo ERP</span>
+          </div>
+          <div class="skill-item"><i class="devicon-sentry-original colored"></i><span>Sentry</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-wrap">
+      <p class="sec-label">Connect</p>
+      <h2 class="sec-title">Get in touch</h2>
+      <div class="contact-inner">
+        <div>
+          <p class="contact-text">Open to backend engineering and DevOps roles. Feel free to reach out for collaboration or opportunities.</p>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:mohamdelnadry12345@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              mohamdelnadry12345@gmail.com
+            </a>
+            <a class="contact-link" href="https://github.com/mohamedelnadry" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              github.com/mohamedelnadry
+            </a>
+            <a class="contact-link" href="https://linkedin.com/in/mohamdelnadry" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/mohamdelnadry
+            </a>
+            <a class="contact-link" href="tel:+201065538824">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +20 106 553 8824
+            </a>
+          </div>
+        </div>
+        <div class="contact-info">
+          <div class="c-info-row"><span class="c-info-label">Location</span><span class="c-info-val">Cairo, Egypt</span></div>
+          <div class="c-info-row"><span class="c-info-label">Available</span><span class="c-info-val available">Open to opportunities</span></div>
+          <div class="c-info-row"><span class="c-info-label">Education</span><span class="c-info-val">B.Sc. Computer Science</span></div>
+          <div class="c-info-row"><span class="c-info-label">Focus</span><span class="c-info-val">Backend &amp; DevOps</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-wrap">
+    Mohamed Elnadry © 2026 · Backend Developer &amp; DevOps Engineer
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
