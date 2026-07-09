@@ -44,20 +44,24 @@ nav {
 }
 .nav-inner {
   display: flex; align-items: center; justify-content: space-between;
-  padding-top: 14px; padding-bottom: 14px;
+  padding-top: 20px; padding-bottom: 20px;
 }
 .logo {
-  font-size: 15px; font-weight: 700; color: var(--text);
+  font-size: 17px; font-weight: 700; color: var(--text);
   letter-spacing: -.2px;
 }
-.nav-links { display: flex; gap: 28px; align-items: center; }
-.nav-links a { font-size: 13px; color: var(--muted); transition: color .2s; }
-.nav-links a:hover { color: var(--text); }
+.nav-links { display: flex; gap: 6px; align-items: center; }
+.nav-links a {
+  font-size: 14px; font-weight: 500; color: var(--muted);
+  padding: 8px 16px; border-radius: 8px;
+  transition: color .2s, background .2s;
+}
+.nav-links a:hover { color: var(--text); background: var(--accent-bg); }
 .hamburger {
   display: none; background: none; border: 1px solid var(--border);
-  border-radius: 8px; padding: 6px 8px; cursor: pointer; color: var(--text);
+  border-radius: 8px; padding: 8px 10px; cursor: pointer; color: var(--text);
 }
-.hamburger svg { width: 20px; height: 20px; display: block; }
+.hamburger svg { width: 22px; height: 22px; display: block; }
 
 /* ── SIDEBAR ── */
 .sidebar-overlay {
@@ -163,8 +167,9 @@ nav {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(26,108,196,.1);
 }
-.skill-item i {
+.skill-item i, .skill-icon {
   font-size: 32px; line-height: 1;
+  width: 32px; height: 32px; object-fit: contain;
 }
 .skill-item span {
   font-size: 11px; font-weight: 500; color: var(--muted);
@@ -296,7 +301,7 @@ footer {
   .proj-header { flex-direction: column; gap: 8px; }
 
   .skill-item { min-width: 76px; padding: 12px 10px; }
-  .skill-item i { font-size: 26px; }
+  .skill-item i, .skill-icon { font-size: 26px; width: 26px; height: 26px; }
 
   .hero-btns { flex-direction: column; }
   .btn { text-align: center; }
